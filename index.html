@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Declaração de Amor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="heart-border">
+        <span class="heart">❤️</span>
+        Eu preciso te contar uma coisa...
+        <span class="heart">❤️</span>
+      </h1>
+      <p class="heart-border">
+        Desde que te conheci, minha vida ganhou um novo brilho. Cada mensagem, cada sorriso,
+        cada conversa tem sido incrível. Eu sinto que estamos cada vez mais próximos, e meu
+        coração não aguenta mais esconder o que sinto. Eu quero saber, você aceita namorar comigo? 💖
+      </p>
+
+      <!-- Botões "Sim" e "Não" -->
+      <div class="cta">
+        <button class="btn btn-yes" id="yesBtn">Sim</button>
+        <button class="btn btn-no" id="noBtn">Não</button>
+      </div>
+
+      <!-- Mensagem Eu Te Amo, inicialmente escondida -->
+      <div class="love-message" id="loveMessage">
+        <p>Eu Te Amo! ❤</p>
+      </div>
+    </div>
+
+    <!-- Canvas para o efeito de fogos -->
+    <canvas id="fireworksCanvas"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>

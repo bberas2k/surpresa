@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #020202;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+  }
+  
+  .content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  h1, p {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .heart-border {
+    border: 3px dashed #fd052f;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .heart {
+    font-size: 2rem;
+    color: #fd052f;
+    position: absolute;
+  }
+  
+  .heart:first-child {
+    left: -25px;
+    top: -15px;
+  }
+  
+  .heart:last-child {
+    right: -25px;
+    bottom: -15px;
+  }
+  
+  .cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .btn {
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .btn[disabled] {
+    background-color: #808080;
+    cursor: not-allowed;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Cores específicas dos botões */
+  .btn-yes {
+    background-color: #fd052f;
+    width: 140px;
+    height: 50px;
+  }
+  
+  .btn-no {
+    background-color: #fd052f;
+    width: 140px;
+    height: 50px;
+  }
+  
+  /* Alinha os botões "Sim" e "Não" */
+  .cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .love-message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #fd052f;
+    display: none;  /* Inicialmente escondido */
+  }
+  
+  /* Estilo do canvas para os fogos */
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Impede a interação com o canvas */
+    z-index: 1; /* Fica abaixo do conteúdo principal */
+  }
+  
